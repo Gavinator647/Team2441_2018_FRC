@@ -29,3 +29,9 @@ constexpr int RIGHT_BACK_DRIVE_PORT = 1;
 // TODO: figure this out
 /// Motor port connected to right front drive motor spark.
 constexpr int RIGHT_FRONT_DRIVE_PORT = 1;
+
+/// Motor port connected to the left fly wheels spark.
+constexpr int LEFT_FLY_WHEELS_PORT = 1;
+
+/// Motor port connected to the right fly wheels spark.
+constexpr int RIGHT_FLY_WHEELS_PORT = 1;
