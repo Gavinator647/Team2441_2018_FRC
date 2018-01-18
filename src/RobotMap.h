@@ -30,8 +30,27 @@ constexpr int RIGHT_BACK_DRIVE_PORT = 1;
 /// Motor port connected to right front drive motor spark.
 constexpr int RIGHT_FRONT_DRIVE_PORT = 1;
 
+// TODO: figure this out
 /// Motor port connected to the left fly wheels spark.
 constexpr int LEFT_FLY_WHEELS_PORT = 1;
 
+// TODO: figure this out
 /// Motor port connected to the right fly wheels spark.
 constexpr int RIGHT_FLY_WHEELS_PORT = 1;
+
+// TODO: figure this out
+/// Limit switch port connected directly to the brain. Determines whether the cube is
+/// in the cube manipulator.
+constexpr int CUBE_MANIPULATOR_SWITCH = 1;
+
+//TODO: figure this out
+/// Solenoid port connected to the two pistons.
+constexpr int RAMP_SOLENOID = 1;
+
+//TODO: figure this out
+/// Motor port connected to ramp spark.
+constexpr int RAMP_MOTOR_PORT = 1;
+
+//TODO: figure this out
+/// Air compressor for the pneumatics
+constexpr int AIR_COMPRESSOR = 1;

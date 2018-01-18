@@ -23,7 +23,7 @@ public:
 	void start_left_motors(int speed);
 	void start_right_motors(int speed);
 
-	void InitDefaultCommand();--
+	void InitDefaultCommand();
 };
 
 #endif  // Drive_H

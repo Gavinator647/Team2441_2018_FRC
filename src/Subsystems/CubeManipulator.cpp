@@ -13,15 +13,15 @@ void CubeManipulator::InitDefaultCommand() {
 }
 
 /// Power the fly wheels at a certain speed. The speed variable exists in the domain
-/// [-100,100]. A positive speed will ,a negative speed will .A speed of zero will
-/// stop the fly wheels.
-void CubeManipulator::start_left_fly_wheels(int speed){
+/// [-100,100]. A positive spins the fly wheels clockwise ,a negative speed spins the
+///fly wheels counterclockwise.A speed of zero will stop the fly wheels.
+void CubeManipulator::start_left_fly_wheels(int speed) {
 
 }
 
 /// Power the fly wheels at a certain speed. The speed variable exists in the domain
-/// [-100,100]. A positive speed will ,a negative speed will .A speed of zero will
-/// stop the fly wheels.
-void CubeManipulator::start_right_fly_wheels(int speed){
+/// [-100,100]. A positive spins the fly wheels counterclockwise, a negative speed
+///spins the fly wheels clockwise.A speed of zero will stop the fly wheels.
+void CubeManipulator::start_right_fly_wheels(int speed) {
 
 }
