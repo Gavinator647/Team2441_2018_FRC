@@ -34,4 +34,21 @@ void Ramp::reverse_winch_motor() {
 
 }
 
-void Ramp::
+/// Starts the air compressor to fill up the air tank.
+void Ramp::start_compressor() {
+
+}
+
+/// Turns off the air compressor.
+void Ramp::stop_compressor() {
+
+}
+
+/// Starts the motor to lift the ramp.
+void Ramp::start_lift_motor() {
+
+}
+/// Stops the motor that lifts the ramp.
+void Ramp::stop_lift_motor() {
+
+}

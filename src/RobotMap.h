@@ -54,3 +54,7 @@ constexpr int RAMP_MOTOR_PORT = 1;
 //TODO: figure this out
 /// Air compressor for the pneumatics
 constexpr int AIR_COMPRESSOR = 1;
+
+//TODO: figure this out
+/// Motor port connected to the ramp raising motor.
+constexpr int RAISE_RAMP_MOTOR = 1;

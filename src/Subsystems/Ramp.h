@@ -16,6 +16,9 @@ private:
 	/// Motor to lower the ramp.
 	frc::Spark down_ramp { RAMP_MOTOR_PORT };
 
+	/// Motor to raise the ramp.
+	frc::Spark rasie_ramp { RAISE_RAMP_MOTOR };
+
 	frc::Compressor air_tank { AIR_COMPRESSOR };
 
 	//TODO: figure out speed.
@@ -29,6 +32,8 @@ public:
 	void reverse_winch_motor();
 	void start_compressor();
 	void stop_compressor();
+	void start_lift_motor();
+	void stop_lift_motor();
 
 	void InitDefaultCommand();
 };
