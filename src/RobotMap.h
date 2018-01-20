@@ -44,17 +44,9 @@ constexpr int RIGHT_FLY_WHEELS_PORT = 1;
 constexpr int CUBE_MANIPULATOR_SWITCH = 1;
 
 //TODO: figure this out
-/// Solenoid port connected to the two pistons.
-constexpr int RAMP_SOLENOID = 1;
+/// Motor port connected to winch spark.
+constexpr int RAMP_WINCH_MOTOR = 1;
 
 //TODO: figure this out
-/// Motor port connected to ramp spark.
-constexpr int RAMP_MOTOR_PORT = 1;
-
-//TODO: figure this out
-/// Air compressor for the pneumatics
-constexpr int AIR_COMPRESSOR = 1;
-
-//TODO: figure this out
-/// Motor port connected to the ramp raising motor.
-constexpr int RAISE_RAMP_MOTOR = 1;
+/// Motor port connected to the CAM shaft motor.
+constexpr int CAM_SHAFT_MOTOR = 1;
