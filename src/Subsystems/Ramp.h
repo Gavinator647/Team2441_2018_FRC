@@ -14,7 +14,7 @@ private:
 	frc::Spark down_ramp { RAMP_WINCH_MOTOR };
 
 	/// Motor for the CAM shaft to raise ramp.
-	frc::Spark rasie_ramp { CAM_SHAFT_MOTOR };
+	frc::Spark raise_ramp { CAM_SHAFT_MOTOR };
 
 	//TODO: figure out speed.
 	/// Speed of winch to lower the ramp.
