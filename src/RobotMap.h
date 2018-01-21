@@ -50,3 +50,8 @@ constexpr int RAMP_WINCH_MOTOR = 1;
 //TODO: figure this out
 /// Motor port connected to the CAM shaft motor.
 constexpr int CAM_SHAFT_MOTOR = 1;
+
+//TODO: figure this out
+/// Limit switch port connected directly to the brain. Determines whether the CAM shaft
+/// is in the right position
+constexpr int CAM_SHAFT_SWITCH = 1;
