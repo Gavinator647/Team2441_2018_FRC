@@ -1,11 +1,11 @@
-#ifndef Drive_H
-#define Drive_H
+#ifndef DriveTrain_H
+#define DriveTrain_H
 
 #include "RobotMap.h"
 #include <Commands/Subsystem.h>
 #include <Spark.h>
 
-class Drive: public Subsystem {
+class DriveTrain: public frc::Subsystem {
 private:
 	/// Back left motor of drive system.
 	frc::Spark back_left { LEFT_BACK_DRIVE_PORT };
@@ -20,10 +20,11 @@ private:
 	frc::Spark front_right { RIGHT_FRONT_DRIVE_PORT };
 
 public:
+	DriveTrain();
 	void start_left_motors(int speed);
 	void start_right_motors(int speed);
 
 	void InitDefaultCommand();
 };
 
-#endif  // Drive_H
+#endif  // DriveTrain_H

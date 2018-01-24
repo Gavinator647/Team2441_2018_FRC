@@ -1,9 +1,9 @@
 #ifndef KillCubeManipulator_H
 #define KillCubeManipulator_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class KillCubeManipulator : public CommandBase {
+class KillCubeManipulator : public frc::Command {
 public:
 	KillCubeManipulator();
 	void Initialize();

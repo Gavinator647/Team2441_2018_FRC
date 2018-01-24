@@ -1,12 +1,12 @@
 #ifndef CubeOut_H
 #define CubeOut_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class CubeOut: public CommandBase {
+class CubeOut: public frc::Command {
 
 private:
-	constexpr float FLYWHEEL_SPEED = 1;
+	static constexpr float FLYWHEEL_SPEED = 1;
 
 public:
 	CubeOut();

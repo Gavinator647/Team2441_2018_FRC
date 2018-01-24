@@ -1,11 +1,11 @@
 #ifndef killRamp_H
 #define killRamp_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class killRamp : public CommandBase {
+class KillRamp : public frc::Command {
 public:
-	killRamp();
+	KillRamp();
 	void Initialize();
 	void Execute();
 	bool IsFinished();
@@ -13,4 +13,4 @@ public:
 	void Interrupted();
 };
 
-#endif  // killRamp_H
+#endif  // KillRamp_H

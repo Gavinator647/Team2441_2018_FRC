@@ -6,7 +6,7 @@
 #include <Spark.h>
 #include <DigitalInput.h>
 
-class CubeManipulator: public Subsystem {
+class CubeManipulator: public frc::Subsystem {
 private:
 
 	/// Motors to operate left side fly wheels.
@@ -17,6 +17,7 @@ private:
 
 	frc::DigitalInput cube_sensor { CUBE_MANIPULATOR_SWITCH };
 public:
+	CubeManipulator();
 	void start_left_fly_wheels(int speed);
 	void start_right_fly_wheels(int speed);
 

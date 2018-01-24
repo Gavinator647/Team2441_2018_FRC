@@ -1,11 +1,11 @@
 #ifndef LowerRamp_H
 #define LowerRamp_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class LowerRamp: public CommandBase {
+class LowerRamp: public frc::Command {
 private:
-	constexpr float LOWER_RAMP_TIME = 1
+	static constexpr float LOWER_RAMP_TIME = 1;
 public:
 	LowerRamp();
 	void Initialize();

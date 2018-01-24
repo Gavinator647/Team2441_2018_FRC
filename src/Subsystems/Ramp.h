@@ -8,7 +8,7 @@
 #include <Compressor.h>
 #include <DigitalInput.h>
 
-class Ramp: public Subsystem {
+class Ramp: public frc::Subsystem {
 private:
 
 	/// Motor for the winch to lower ramp.
@@ -19,10 +19,11 @@ private:
 
 	//TODO: figure out speed.
 	/// Speed of winch to lower the ramp.
-	constexpr float WINCH_SPEED = 1;
+	static constexpr float WINCH_SPEED = 1;
 
 	frc::DigitalInput cam_switch { CAM_SHAFT_SWITCH };
 public:
+	Ramp();
 	void start_winch_motor();
 	void stop_winch_motor();
 	void reverse_winch_motor();

@@ -1,11 +1,11 @@
 #ifndef CubeIn_H
 #define CubeIn_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class CubeIn: public CommandBase {
+class CubeIn : public frc::Command {
 private:
-	constexpr float FLYWHEEL_SPEED = 1;
+	static constexpr float FLYWHEEL_SPEED = 1;
 public:
 	CubeIn();
 	void Initialize();

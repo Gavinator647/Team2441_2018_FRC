@@ -1,12 +1,12 @@
 #ifndef DrivePastAutoLine_H
 #define DrivePastAutoLine_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class DrivePastAutoLine: public CommandBase {
+class DrivePastAutoLine: public frc::Command {
 private:
-	constexpr float DRIVE_SPEED = 1;
-	constexpr float DRIVE_TIME = 1;
+	static constexpr float DRIVE_SPEED = 1;
+	static constexpr float DRIVE_TIME = 1;
 public:
 	DrivePastAutoLine();
 	void Initialize();

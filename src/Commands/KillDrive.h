@@ -1,9 +1,9 @@
 #ifndef KillDrive_H
 #define KillDrive_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class KillDrive: public CommandBase {
+class KillDrive: public frc::Command {
 
 public:
 	KillDrive();

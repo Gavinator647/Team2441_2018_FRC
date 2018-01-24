@@ -1,11 +1,11 @@
 #ifndef ReverseWinch_H
 #define ReverseWinch_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class ReverseWinch: public CommandBase {
+class ReverseWinch: public frc::Command {
 private:
-	constexpr float REVERSE_WINCH_TIME = 1
+	static constexpr float REVERSE_WINCH_TIME = 1;
 public:
 	ReverseWinch();
 	void Initialize();

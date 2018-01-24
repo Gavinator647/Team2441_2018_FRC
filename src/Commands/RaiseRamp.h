@@ -1,11 +1,11 @@
 #ifndef RaiseRamp_H
 #define RaiseRamp_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class RaiseRamp: public CommandBase {
+class RaiseRamp: public frc::Command {
 private:
-	constexpr float RAISE_RAMP_TIME = 1
+	static constexpr float RAISE_RAMP_TIME = 1;
 public:
 	RaiseRamp();
 	void Initialize();

@@ -1,9 +1,9 @@
 #ifndef DriveJoystick_H
 #define DriveJoystick_H
 
-#include "../CommandBase.h"
+#include <Commands/Command.h>
 
-class DriveJoystick : public CommandBase {
+class DriveJoystick : public frc::Command {
 public:
 	DriveJoystick();
 	void Initialize();
