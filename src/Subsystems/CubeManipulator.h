@@ -20,7 +20,7 @@ public:
 	void start_left_fly_wheels(int speed);
 	void start_right_fly_wheels(int speed);
 
-	void InitDefaultCommand();--
+	void InitDefaultCommand();
 };
 
 #endif  // CubeManipulator_H
