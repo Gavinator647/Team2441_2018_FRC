@@ -10,10 +10,10 @@ class CubeManipulator: public frc::Subsystem {
 private:
 
 	/// Motors to operate left side fly wheels.
-	frc::Spark right { RIGHT_FLY_WHEELS_PORT };
+	frc::Spark right_m { RIGHT_FLY_WHEELS_PORT };
 
 	/// Motors to operate left side fly wheels.
-	frc::Spark left { LEFT_FLY_WHEELS_PORT };
+	frc::Spark left_m { LEFT_FLY_WHEELS_PORT };
 
 	frc::DigitalInput cube_sensor { CUBE_MANIPULATOR_SWITCH };
 public:
