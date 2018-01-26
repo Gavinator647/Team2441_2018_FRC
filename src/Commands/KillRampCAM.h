@@ -1,11 +1,11 @@
-#ifndef killRamp_H
-#define killRamp_H
+#ifndef KillRampCAM_H
+#define KillRampCAM_H
 
 #include <Commands/Command.h>
 
-class KillRamp : public frc::Command {
+class KillRampCAM : public frc::Command {
 public:
-	KillRamp();
+	KillRampCAM();
 	void Initialize();
 	void Execute();
 	bool IsFinished();
@@ -13,4 +13,4 @@ public:
 	void Interrupted();
 };
 
-#endif  // KillRamp_H
+#endif  // KillRampCAM_H

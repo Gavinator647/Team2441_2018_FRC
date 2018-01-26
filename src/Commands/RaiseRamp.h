@@ -5,7 +5,7 @@
 
 class RaiseRamp: public frc::Command {
 private:
-	static constexpr float RAISE_RAMP_TIME = 1;
+	static constexpr float RAISE_SPEED = 1;
 public:
 	RaiseRamp();
 	void Initialize();

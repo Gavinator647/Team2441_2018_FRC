@@ -5,7 +5,7 @@
 
 class LowerRamp: public frc::Command {
 private:
-	static constexpr float LOWER_RAMP_TIME = 1;
+	static constexpr float LOWER_SPEED = 1;
 public:
 	LowerRamp();
 	void Initialize();
