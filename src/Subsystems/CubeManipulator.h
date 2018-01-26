@@ -4,6 +4,7 @@
 #include <Commands/Subsystem.h>
 #include "RobotMap.h"
 #include <Spark.h>
+#include <PWMSpeedController.h>
 #include <DigitalInput.h>
 
 class CubeManipulator: public frc::Subsystem {
@@ -16,10 +17,13 @@ private:
 	frc::Spark left_m { LEFT_FLY_WHEELS_PORT };
 
 	frc::DigitalInput cube_sensor { CUBE_MANIPULATOR_SWITCH };
+
 public:
 	CubeManipulator();
 	void start_left_fly_wheels(int speed);
 	void start_right_fly_wheels(int speed);
+	bool is_cube_in ();
+
 
 	void InitDefaultCommand();
 };
