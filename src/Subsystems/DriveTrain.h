@@ -4,6 +4,7 @@
 #include "RobotMap.h"
 #include <Commands/Subsystem.h>
 #include <Spark.h>
+#include <PWMSpeedController.h>
 
 class DriveTrain: public frc::Subsystem {
 private:
