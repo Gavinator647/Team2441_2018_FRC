@@ -5,7 +5,7 @@
 #include <Commands/Command.h>
 #include "Robot.h"
 
-class CubeIn : public frc::Command {
+class CubeIn: public frc::Command {
 
 private:
 	static constexpr int FLYWHEEL_SPEED = 1;

@@ -1,7 +1,8 @@
 #include "CubeIn.h"
 
 ///Needs object Cube manipulator
-CubeIn::CubeIn() : frc::Command("CubeIn") {
+CubeIn::CubeIn() :
+		frc::Command("CubeIn") {
 	Requires(&Robot::intake);
 }
 
