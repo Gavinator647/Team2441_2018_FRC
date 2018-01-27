@@ -11,6 +11,7 @@
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
 #include <TimedRobot.h>
+#include "Subsystems/CubeManipulator.h"
 
 class Robot: public frc::TimedRobot {
 public:
@@ -76,7 +77,7 @@ private:
 	// doesn't have undefined behavior and potentially crash.
 public:
 	frc::Command* m_autonomousCommand = nullptr;
-
+	CubeManipulator intake;
 	frc::SendableChooser<frc::Command*> m_chooser;
 };
 

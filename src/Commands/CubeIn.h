@@ -1,6 +1,9 @@
 #ifndef CubeIn_H
 #define CubeIn_H
 
+#include "Subsystems/CubeManipulator.h"
+#include "Robot.cpp"
+
 #include <Commands/Command.h>
 
 class CubeIn : public frc::Command {

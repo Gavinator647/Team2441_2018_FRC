@@ -1,6 +1,7 @@
 #ifndef CubeOut_H
 #define CubeOut_H
 
+#include "Subsystem "
 #include <Commands/Command.h>
 
 class CubeOut: public frc::Command {
