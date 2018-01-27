@@ -77,8 +77,8 @@ private:
 	// doesn't have undefined behavior and potentially crash.
 public:
 	frc::Command* m_autonomousCommand = nullptr;
-	CubeManipulator intake;
 	frc::SendableChooser<frc::Command*> m_chooser;
+	static CubeManipulator intake;
 };
 
 START_ROBOT_CLASS(Robot)

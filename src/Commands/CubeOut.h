@@ -1,7 +1,8 @@
 #ifndef CubeOut_H
 #define CubeOut_H
 
-#include "Subsystem "
+#include "Subsystems/CubeManipulator.h"
+#include "Robot.cpp"
 #include <Commands/Command.h>
 
 class CubeOut: public frc::Command {
