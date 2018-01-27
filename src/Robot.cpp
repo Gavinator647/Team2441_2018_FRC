@@ -12,6 +12,8 @@
 #include <SmartDashboard/SmartDashboard.h>
 #include <TimedRobot.h>
 #include "Subsystems/CubeManipulator.h"
+#include "Subsystems/Ramp.h"
+#include "Subsystems/DriveTrain.h"
 
 class Robot: public frc::TimedRobot {
 public:
@@ -79,6 +81,9 @@ public:
 	frc::Command* m_autonomousCommand = nullptr;
 	frc::SendableChooser<frc::Command*> m_chooser;
 	static CubeManipulator intake;
+	static Ramp raise;
+	static Ramp lower;
+	static DriveTrain drive;
 };
 
 START_ROBOT_CLASS(Robot)
