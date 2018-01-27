@@ -30,7 +30,8 @@ void Ramp::start_cam_motor() {
 void Ramp::stop_cam_motor() {
 	raise_ramp.Set(CAM_STOP);
 }
-/// Checks if ramp is down. If button is pressed, then the
+/// Checks if CAMs are in the right position. If button is pressed, then the command RaiseRamp is disabled
+/// then the command KillRampWinch is activated.
 bool Ramp::is_ramp_down() {
 	return cam_switch.Get();
 }

@@ -1,5 +1,6 @@
 #include "KillRampCAM.h"
 
+/// Requires object ramp
 KillRampCAM::KillRampCAM() {
 
 }
