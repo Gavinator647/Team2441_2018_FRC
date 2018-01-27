@@ -2,13 +2,13 @@
 #define CubeIn_H
 
 #include "Subsystems/CubeManipulator.h"
-#include "Robot.cpp"
-
 #include <Commands/Command.h>
 
 class CubeIn : public frc::Command {
+
 private:
 	static constexpr int FLYWHEEL_SPEED = 1;
+
 public:
 	CubeIn();
 	void Initialize();
