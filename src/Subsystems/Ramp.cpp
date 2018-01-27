@@ -3,7 +3,7 @@
 
 /// Constructor. Nothing happens here.
 Ramp::Ramp() :
-		Subsystem("ExampleSubsystem") {
+		Subsystem("Ramp") {
 
 }
 
