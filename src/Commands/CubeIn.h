@@ -3,6 +3,7 @@
 
 #include "Subsystems/CubeManipulator.h"
 #include <Commands/Command.h>
+#include "Robot.h"
 
 class CubeIn : public frc::Command {
 
