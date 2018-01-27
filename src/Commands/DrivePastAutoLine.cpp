@@ -1,6 +1,7 @@
 #include "DrivePastAutoLine.h"
 ///Needs object drive
 DrivePastAutoLine::DrivePastAutoLine() {
+	Robot::drivetrain
 
 }
 

@@ -22,7 +22,7 @@ bool CubeOut::IsFinished() {
 	return false;
 }
 
-///Not needed
+///Worthless
 void CubeOut::End() {
 
 

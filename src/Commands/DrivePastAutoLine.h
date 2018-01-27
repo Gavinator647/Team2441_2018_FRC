@@ -1,6 +1,7 @@
 #ifndef DrivePastAutoLine_H
 #define DrivePastAutoLine_H
 
+#include "Robot.h"
 #include <Commands/Command.h>
 
 class DrivePastAutoLine: public frc::Command {
