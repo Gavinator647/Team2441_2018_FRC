@@ -39,7 +39,7 @@ public:
 	void stop_winch_motor();
 	void start_cam_motor();
 	void stop_cam_motor();
-	bool is_ramp_down();
+	bool is_ramp_up();
 
 	void InitDefaultCommand();
 };

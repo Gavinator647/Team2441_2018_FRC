@@ -2,6 +2,8 @@
 #define KillRampWinch_H
 
 #include <Commands/Command.h>
+#include "Subsystems/Ramp.h"
+#include "Robot.h"
 
 class KillRampWinch : public frc::Command {
 public:

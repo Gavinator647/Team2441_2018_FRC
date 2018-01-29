@@ -1,11 +1,14 @@
 #include "LowerRamp.h"
+
 ///requires object ramp
-LowerRamp::LowerRamp() {
+LowerRamp::LowerRamp() : frc::Command("LowerRamp") {
+	Requires(&Robot::ramp);
 
 }
 
 ///Starts moters
 void LowerRamp::Initialize() {
+	Robot::ramp.start_winch_motor();
 
 }
 
@@ -19,12 +22,13 @@ bool LowerRamp::IsFinished() {
 	return true;
 }
 
-///Not needed
+///Kills Winch
 void LowerRamp::End() {
+	Robot::ramp.stop_winch_motor();
 
 }
 
 ///Not needed
 void LowerRamp::Interrupted() {
-
+	Robot::ramp.stop_winch_motor();
 }

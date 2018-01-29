@@ -1,13 +1,13 @@
 #include "KillRampCAM.h"
 
 /// Requires object ramp
-KillRampCAM::KillRampCAM() {
+KillRampCAM::KillRampCAM() : frc::Command("KillRampCAM") {
 
 }
 
 /// stops the motors for the CAM shaft motor
 void KillRampCAM::Initialize() {
-
+	Robot::ramp.stop_cam_motor();
 }
 
 /// Not needed

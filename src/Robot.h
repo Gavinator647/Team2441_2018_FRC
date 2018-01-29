@@ -7,15 +7,15 @@
 #include <SmartDashboard/SmartDashboard.h>
 #include <TimedRobot.h>
 #include "Subsystems/CubeManipulator.h"
-#include "Subsystems/Ramp.h"
 #include "Subsystems/DriveTrain.h"
+#include "Subsystems/Ramp.h"
 #include "OI.h"
 
 class Robot: public frc::TimedRobot {
 public:
 	static DriveTrain drivetrain;
-	static Ramp ramp;
 	static CubeManipulator intake;
+	static Ramp ramp;
 	static OI oi;
 
 private:

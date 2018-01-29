@@ -2,6 +2,8 @@
 #define KillRampCAM_H
 
 #include <Commands/Command.h>
+#include "Subsystems/Ramp.h"
+#include "Robot.h"
 
 class KillRampCAM : public frc::Command {
 public:

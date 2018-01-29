@@ -2,10 +2,10 @@
 #define LowerRamp_H
 
 #include <Commands/Command.h>
+#include "Subsystems/Ramp.h"
+#include "Robot.h"
 
 class LowerRamp: public frc::Command {
-private:
-	static constexpr float LOWER_SPEED = 1;
 public:
 	LowerRamp();
 	void Initialize();
