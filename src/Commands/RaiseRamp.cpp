@@ -1,6 +1,7 @@
 #include "RaiseRamp.h"
 ///requires object ramp
-RaiseRamp::RaiseRamp() : frc::Command("RaiseRamp") {
+RaiseRamp::RaiseRamp() :
+		frc::Command("RaiseRamp") {
 	Requires(&Robot::ramp);
 
 }

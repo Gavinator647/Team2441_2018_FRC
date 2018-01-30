@@ -1,7 +1,8 @@
 #include "DriveJoystick.h"
-///Requres object joystck
-DriveJoystick::DriveJoystick() {
-
+///Requires object joystick
+DriveJoystick::DriveJoystick() :
+		frc::Command("DriveJoystick") {
+	Requires(&Robot::drivetrain);
 }
 
 //TODO: Figure this out

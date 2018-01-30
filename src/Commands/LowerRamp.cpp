@@ -1,7 +1,8 @@
 #include "LowerRamp.h"
 
 ///requires object ramp
-LowerRamp::LowerRamp() : frc::Command("LowerRamp") {
+LowerRamp::LowerRamp() :
+		frc::Command("LowerRamp") {
 	Requires(&Robot::ramp);
 
 }

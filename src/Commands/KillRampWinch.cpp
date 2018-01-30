@@ -1,7 +1,8 @@
 #include <Commands/KillRampWinch.h>
 ///requires object ramp
-KillRampWinch::KillRampWinch() : frc::Command("KillRampWinch") {
-
+KillRampWinch::KillRampWinch() :
+		frc::Command("KillRampWinch") {
+	Requires(&Robot::ramp);
 }
 
 ///stops winch motors
