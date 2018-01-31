@@ -2,6 +2,8 @@
 #define KillDrive_H
 
 #include <Commands/Command.h>
+#include "Robot.h"
+#include "Subsystems/DriveTrain.h"
 
 class KillDrive: public frc::Command {
 

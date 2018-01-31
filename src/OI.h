@@ -7,7 +7,19 @@
 
 #pragma once
 
+#include <Joystick.h>
+#include <Buttons/JoystickButton.h>
+
 class OI {
 public:
 	OI();
+	frc::Joystick GetJoystick();
+
+private:
+	frc:: Joystick m_joystick{0};
+
+	frc::JoystickButton y{&m_joystick, 0};
+	frc::JoystickButton x{&m_joystick, 0};
+	frc::JoystickButton lt{&m_joystick, 0};
+	frc::JoystickButton rt{&m_joystick, 0};
 };

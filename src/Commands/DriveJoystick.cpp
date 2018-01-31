@@ -5,27 +5,35 @@ DriveJoystick::DriveJoystick() :
 	Requires(&Robot::drivetrain);
 }
 
-//TODO: Figure this out
+///Not needed
 void DriveJoystick::Initialize() {
 
 }
 
-//TODO: Figure this out
+///Move the robot in response to the joystick
 void DriveJoystick::Execute() {
+	int left_speed = Robot::oi.GetJoystick().GetRawAxis(1) * 100;
+	int right_speed = Robot::oi.GetJoystick().GetRawAxis(4) * 100;
+	Robot::drivetrain.start_left_motors(left_speed);
+	Robot::drivetrain.start_right_motors(right_speed);
 
 }
 
-//TODO: Figure this out
+///Keep looping until you are done driving the robot
 bool DriveJoystick::IsFinished() {
 	return false;
 }
 
-//TODO: Figure this out
+///Stop robot
 void DriveJoystick::End() {
+	Robot::drivetrain.start_left_motors(0);
+	Robot::drivetrain.start_right_motors(0);
 
 }
 
-//TODO: Figure this out
+///Stop robot
 void DriveJoystick::Interrupted() {
+	Robot::drivetrain.start_left_motors(0);
+	Robot::drivetrain.start_right_motors(0);
 
 }
