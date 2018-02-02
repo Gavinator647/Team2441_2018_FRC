@@ -12,7 +12,7 @@
 #include "OI.h"
 
 class Robot: public frc::TimedRobot {
-public:
+public:q
 	static DriveTrain drivetrain;
 	static CubeManipulator intake;
 	static Ramp ramp;

@@ -5,17 +5,22 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "OI.h"
+#pragma once
 
-#include <WPILib.h>
+#include <Buttons/Trigger.h>
 
-OI::OI() {
-	x.WhenPressed(new RaiseRamp());
-	lt.WhenPressed(new CubeOut());
-	lt.WhenReleased(new KillCubeManipulator());
-	rt.WhenPressed(new CubeIn());
-	rt.WhenReleased(new KillCubeManipulator());
-	y_lb.WhenActive(new LowerRamp);
+namespace frc {
+class Joystick;
+}  // namespace frc
 
+class DoubleButton : public frc::Trigger {
+public:
+	DoubleButton(frc::Joystick* joy, int button1, int button2);
 
-}
+	bool Get();
+
+private:
+	frc::Joystick& m_joy;
+	int m_button1;
+	int m_button2;
+};

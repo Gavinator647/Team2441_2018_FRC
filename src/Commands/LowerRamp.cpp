@@ -11,6 +11,9 @@ LowerRamp::LowerRamp() :
 void LowerRamp::Initialize() {
 	Robot::ramp.start_winch_motor();
 
+	lower_ramp_time.Reset();
+	lower_ramp_time.Start();
+
 }
 
 ///Not needed
@@ -20,7 +23,7 @@ void LowerRamp::Execute() {
 
 ///No need to loop
 bool LowerRamp::IsFinished() {
-	return true;
+	return lower_ramp_time.HasPeriodPassed(DRIVE_TIME);
 }
 
 ///Kills Winch

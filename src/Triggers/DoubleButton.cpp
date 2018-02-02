@@ -5,17 +5,16 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "OI.h"
+#include "DoubleButton.h"
 
-#include <WPILib.h>
+#include <Joystick.h>
 
-OI::OI() {
-	x.WhenPressed(new RaiseRamp());
-	lt.WhenPressed(new CubeOut());
-	lt.WhenReleased(new KillCubeManipulator());
-	rt.WhenPressed(new CubeIn());
-	rt.WhenReleased(new KillCubeManipulator());
-	y_lb.WhenActive(new LowerRamp);
+DoubleButton::DoubleButton(frc::Joystick* joy, int button1, int button2)
+    : m_joy(*joy) {
+	m_button1 = button1;
+	m_button2 = button2;
+}
 
-
+bool DoubleButton::Get() {
+	return m_joy.GetRawButton(m_button1) && m_joy.GetRawButton(m_button2);
 }

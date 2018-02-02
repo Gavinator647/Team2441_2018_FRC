@@ -1,5 +1,5 @@
 #include "DriveTrain.h"
-#include "../RobotMap.h"
+
 
 /// Constructor. Nothing happens here.
 DriveTrain::DriveTrain() :
@@ -9,6 +9,7 @@ DriveTrain::DriveTrain() :
 
 /// Constructor. Nothing happens here.
 void DriveTrain::InitDefaultCommand() {
+	SetDefaultCommand(new DriveJoystick());
 
 }
 

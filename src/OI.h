@@ -7,8 +7,15 @@
 
 #pragma once
 
+#include "Commands/CubeIn.h"
+#include "Commands/CubeOut.h"
+#include "Commands/LowerRamp.h"
+#include "Commands/KillCubeManipulator.h"
+#include "Commands/RaiseRamp.h"
 #include <Joystick.h>
 #include <Buttons/JoystickButton.h>
+#include "Triggers/DoubleButton.h"
+
 
 class OI {
 public:
@@ -18,8 +25,10 @@ public:
 private:
 	frc:: Joystick m_joystick{0};
 
-	frc::JoystickButton y{&m_joystick, 0};
 	frc::JoystickButton x{&m_joystick, 0};
 	frc::JoystickButton lt{&m_joystick, 0};
 	frc::JoystickButton rt{&m_joystick, 0};
+
+
+	DoubleButton y_lb{&m_joystick, 0, 0};
 };
