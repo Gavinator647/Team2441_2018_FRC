@@ -10,7 +10,6 @@ DriveTrain::DriveTrain() :
 /// Constructor. Nothing happens here.
 void DriveTrain::InitDefaultCommand() {
 	SetDefaultCommand(new DriveJoystick());
-
 }
 
 /// Power the motor at a certain speed. The speed variable exists in the domain [-100

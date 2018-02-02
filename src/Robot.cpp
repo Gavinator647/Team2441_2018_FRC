@@ -5,6 +5,7 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 #include <Robot.h>
+#include <Commands/Scheduler.h>
 
 DriveTrain Robot::drivetrain;
 CubeManipulator Robot::intake;
@@ -44,6 +45,8 @@ void Robot::DisabledPeriodic() {
  * to the if-else structure below with additional strings & commands.
  */
 void Robot::AutonomousInit() {
+	m_autonomousCommand = new DrivePastAutoLine();
+	m_autonomousCommand->Start();
 }
 
 void Robot::AutonomousPeriodic() {

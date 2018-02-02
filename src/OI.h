@@ -20,7 +20,7 @@
 class OI {
 public:
 	OI();
-	frc::Joystick GetJoystick();
+	frc::Joystick& GetJoystick();
 
 private:
 	frc:: Joystick m_joystick{0};

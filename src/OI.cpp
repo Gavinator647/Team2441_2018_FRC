@@ -19,3 +19,7 @@ OI::OI() {
 
 
 }
+
+frc::Joystick& OI::GetJoystick() {
+	return m_joystick;
+}

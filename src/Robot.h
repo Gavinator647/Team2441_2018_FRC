@@ -1,18 +1,25 @@
 #pragma once
 
+
 #include <Commands/Command.h>
 #include <Commands/Scheduler.h>
 #include <LiveWindow/LiveWindow.h>
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
-#include <TimedRobot.h>
+#include <IterativeRobot.h>
+
+#include "Commands/DrivePastAutoLine.h"
+
+#include "OI.h"
+
 #include "Subsystems/CubeManipulator.h"
 #include "Subsystems/DriveTrain.h"
 #include "Subsystems/Ramp.h"
-#include "OI.h"
 
-class Robot: public frc::TimedRobot {
-public:q
+
+
+class Robot: public frc::IterativeRobot {
+public:
 	static DriveTrain drivetrain;
 	static CubeManipulator intake;
 	static Ramp ramp;
