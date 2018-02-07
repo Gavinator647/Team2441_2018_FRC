@@ -37,5 +37,6 @@ private:
 	void DisabledInit() override;
 	void DisabledPeriodic() override;
 
+	void Log();
 };
 

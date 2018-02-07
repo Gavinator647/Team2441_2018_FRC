@@ -20,6 +20,11 @@ private:
 	/// Front right motor of the drive system.
 	frc::Spark front_right { RIGHT_FRONT_DRIVE_PORT };
 
+	/// Current Drive Speed Value of Left Side of Drive Motors
+	int left_drive_speed =0 ;
+	/// Current Drive Speed Value of Right Side of Drive Motors
+	int right_drive_speed =0;
+
 public:
 	DriveTrain();
 	void start_left_motors(int speed);

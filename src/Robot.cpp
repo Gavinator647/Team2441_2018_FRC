@@ -4,8 +4,9 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
-#include <Robot.h>
+#include "Robot.h"
 #include <Commands/Scheduler.h>
+#include <SmartDashboard/SmartDashboard.h>
 
 DriveTrain Robot::drivetrain;
 CubeManipulator Robot::intake;
@@ -13,7 +14,9 @@ Ramp Robot::ramp;
 OI Robot::oi;
 
 void Robot::RobotInit() {
-
+	frc::SmartDashboard::PutData(&drivetrain);
+	frc::SmartDashboard::PutData(&intake);
+	frc::SmartDashboard::PutData(&ramp);
 }
 
 /**
@@ -28,6 +31,7 @@ void Robot::DisabledInit() {
 
 void Robot::DisabledPeriodic() {
 	frc::Scheduler::GetInstance()->Run();
+	Log();
 }
 
 /**
@@ -71,4 +75,9 @@ void Robot::TeleopPeriodic() {
 void Robot::TestPeriodic() {
 }
 
+void Robot::Log() {
+	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
+	frc::SmartDashboard::PutBoolean("Intake Switch", intake.is_cube_in());
+
+}
 START_ROBOT_CLASS(Robot)

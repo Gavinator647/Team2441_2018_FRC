@@ -16,15 +16,15 @@
 
 // TODO: figure this out
 /// Motor port connected to left back drive motor spark.
-constexpr int LEFT_BACK_DRIVE_PORT = 1;
+constexpr int LEFT_BACK_DRIVE_PORT = 2;
 
 // TODO: figure this out
 /// Motor port connected to left front drive motor spark.
-constexpr int LEFT_FRONT_DRIVE_PORT = 1;
+constexpr int LEFT_FRONT_DRIVE_PORT = 0;
 
 // TODO: figure this out
 /// Motor port connected to right back drive motor spark.
-constexpr int RIGHT_BACK_DRIVE_PORT = 1;
+constexpr int RIGHT_BACK_DRIVE_PORT = 3;
 
 // TODO: figure this out
 /// Motor port connected to right front drive motor spark.
@@ -32,26 +32,26 @@ constexpr int RIGHT_FRONT_DRIVE_PORT = 1;
 
 // TODO: figure this out
 /// Motor port connected to the left fly wheels spark.
-constexpr int LEFT_FLY_WHEELS_PORT = 1;
+constexpr int LEFT_FLY_WHEELS_PORT = 6;
 
 // TODO: figure this out
 /// Motor port connected to the right fly wheels spark.
-constexpr int RIGHT_FLY_WHEELS_PORT = 1;
+constexpr int RIGHT_FLY_WHEELS_PORT = 7;
 
 // TODO: figure this out
 /// Limit switch port connected directly to the brain. Determines whether the cube is
 /// in the cube manipulator.
-constexpr int CUBE_MANIPULATOR_SWITCH = 1;
+constexpr int CUBE_MANIPULATOR_SWITCH = 0;
 
 //TODO: figure this out
 /// Motor port connected to winch spark.
-constexpr int RAMP_WINCH_MOTOR = 1;
+constexpr int RAMP_WINCH_MOTOR = 4;
 
 //TODO: figure this out
 /// Motor port connected to the CAM shaft motor.
-constexpr int CAM_SHAFT_MOTOR = 1;
+constexpr int CAM_SHAFT_MOTOR = 5;
 
 //TODO: figure this out
 /// Limit switch port connected directly to the brain. Determines whether the CAM shaft
 /// is in the right position
-constexpr int CAM_SHAFT_SWITCH = 1;
+constexpr int CAM_SHAFT_SWITCH = 9;
