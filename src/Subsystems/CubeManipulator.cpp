@@ -1,5 +1,5 @@
 #include "CubeManipulator.h"
-#include "../RobotMap.h"
+
 
 /// Constructor, nothing happens here.
 CubeManipulator::CubeManipulator() :

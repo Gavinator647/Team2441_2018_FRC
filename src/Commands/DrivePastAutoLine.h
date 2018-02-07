@@ -1,7 +1,6 @@
 #ifndef DrivePastAutoLine_H
 #define DrivePastAutoLine_H
 
-#include "Robot.h"
 #include <Commands/Command.h>
 #include <Timer.h>
 

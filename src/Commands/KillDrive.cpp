@@ -1,5 +1,5 @@
 #include "KillDrive.h"
-
+#include "Robot.h"
 ///Requires drive object.
 KillDrive::KillDrive()  :
 		frc::Command("DrivePastAutoLine") {

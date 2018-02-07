@@ -1,4 +1,5 @@
 #include <Commands/KillRampWinch.h>
+#include "Robot.h"
 ///requires object ramp
 KillRampWinch::KillRampWinch() :
 		frc::Command("KillRampWinch") {

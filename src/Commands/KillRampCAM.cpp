@@ -1,5 +1,5 @@
 #include "KillRampCAM.h"
-
+#include "Robot.h"
 /// Requires object ramp
 KillRampCAM::KillRampCAM() :
 		frc::Command("KillRampCAM") {

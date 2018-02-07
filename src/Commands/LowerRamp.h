@@ -3,7 +3,6 @@
 
 #include <Commands/Command.h>
 #include "Subsystems/Ramp.h"
-#include "Robot.h"
 #include <Timer.h>
 
 class LowerRamp: public frc::Command {

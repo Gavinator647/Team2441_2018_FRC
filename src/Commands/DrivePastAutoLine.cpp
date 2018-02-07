@@ -1,4 +1,5 @@
 #include "DrivePastAutoLine.h"
+#include "Robot.h"
 ///Needs object drive
 DrivePastAutoLine::DrivePastAutoLine() :
 		frc::Command("DrivePastAutoLine") {

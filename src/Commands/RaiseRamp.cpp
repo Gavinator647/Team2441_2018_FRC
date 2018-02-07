@@ -1,4 +1,5 @@
 #include "RaiseRamp.h"
+#include "Robot.h"
 ///requires object ramp
 RaiseRamp::RaiseRamp() :
 		frc::Command("RaiseRamp") {

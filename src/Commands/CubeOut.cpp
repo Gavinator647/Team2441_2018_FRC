@@ -1,4 +1,5 @@
 #include "CubeOut.h"
+#include "Robot.h"
 ///Needs object cube manipulator
 CubeOut::CubeOut() : frc::Command("CubeOut") {
 	Requires(&Robot::intake);

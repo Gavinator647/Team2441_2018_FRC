@@ -1,5 +1,5 @@
 #include "LowerRamp.h"
-
+#include "Robot.h"
 ///requires object ramp
 LowerRamp::LowerRamp() :
 		frc::Command("LowerRamp") {

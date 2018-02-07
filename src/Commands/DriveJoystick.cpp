@@ -1,4 +1,5 @@
 #include "DriveJoystick.h"
+#include "Robot.h"
 ///Requires object joystick
 DriveJoystick::DriveJoystick() :
 		frc::Command("DriveJoystick") {

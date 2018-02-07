@@ -1,4 +1,5 @@
 #include "CubeIn.h"
+#include "Robot.h"
 
 ///Needs object Cube manipulator
 CubeIn::CubeIn() :

@@ -1,5 +1,5 @@
 #include "DriveTrain.h"
-
+#include <PWMSpeedController.h>
 
 /// Constructor. Nothing happens here.
 DriveTrain::DriveTrain() :

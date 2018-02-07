@@ -1,4 +1,5 @@
 #include "KillCubeManipulator.h"
+#include "Robot.h"
 
 ///Needs cube manipulator object
 KillCubeManipulator::KillCubeManipulator() :

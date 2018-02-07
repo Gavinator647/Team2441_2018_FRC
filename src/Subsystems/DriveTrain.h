@@ -1,11 +1,10 @@
 #ifndef DriveTrain_H
 #define DriveTrain_H
 
-#include "Robot.h"
 #include <Commands/Subsystem.h>
-#include <Spark.h>
 #include "Commands/DriveJoystick.h"
-#include <PWMSpeedController.h>
+#include "RobotMap.h"
+#include <Spark.h>
 
 class DriveTrain: public frc::Subsystem {
 private:
