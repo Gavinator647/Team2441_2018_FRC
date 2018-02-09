@@ -32,6 +32,13 @@ private:
 	/// Stops CAM shaft motor..
 	static constexpr float CAM_STOP = 0;
 
+	///wax_on -> winch_on, declares variables that stores info on whether the winch are done
+	bool wax_on = true;
+
+	///declares variables that stores info on whether the cam are done
+	bool cam_on = true;
+
+	///Tells all kinda stuff about whether the cam is up and stuff and the winch
 	frc::DigitalInput cam_switch { CAM_SHAFT_SWITCH };
 public:
 	Ramp();

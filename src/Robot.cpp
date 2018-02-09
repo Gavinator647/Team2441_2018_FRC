@@ -79,5 +79,6 @@ void Robot::Log() {
 	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
 	frc::SmartDashboard::PutBoolean("Intake Switch", intake.is_cube_in());
 
+
 }
 START_ROBOT_CLASS(Robot)

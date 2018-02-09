@@ -19,6 +19,7 @@ void DriveTrain::start_left_motors(int speed) {
 	double spark_input_value = speed / -100;
 	front_left.Set(spark_input_value);
 	back_left.Set(spark_input_value);
+	left_drive_speed = speed;
 }
 
 /// Power the motor at a certain speed. The speed variable exists in the domain [-100
@@ -28,5 +29,6 @@ void DriveTrain::start_right_motors(int speed) {
 	double spark_input_value = speed / 100;
 	front_right.Set(spark_input_value);
 	back_right.Set(spark_input_value);
+	right_drive_speed = speed;
 
 }

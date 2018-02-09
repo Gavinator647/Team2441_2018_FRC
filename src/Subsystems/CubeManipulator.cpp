@@ -18,6 +18,7 @@ void CubeManipulator::InitDefaultCommand() {
 void CubeManipulator::start_left_fly_wheels(int speed) {
 	double spark_input_value = speed/100;
 	left_m.Set(spark_input_value);
+	left_fly_wheels_speed = speed;
 }
 
 /// Power the fly wheels at a certain speed. The speed variable exists in the domain
@@ -26,6 +27,7 @@ void CubeManipulator::start_left_fly_wheels(int speed) {
 void CubeManipulator::start_right_fly_wheels(int speed) {
 	double spark_input_value = -speed/100;
 	right_m.Set(spark_input_value);
+	right_fly_wheels_speed = speed;
 }
 
 /// Checks if cube is in, if cube is in the button will be pressed. If the button is
