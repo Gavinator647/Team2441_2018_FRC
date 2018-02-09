@@ -34,7 +34,6 @@ private:
 	void TeleopInit() override;
 	void TeleopPeriodic() override;
 	void TestPeriodic() override;
-	void DisabledInit() override;
 	void DisabledPeriodic() override;
 
 	void Log();

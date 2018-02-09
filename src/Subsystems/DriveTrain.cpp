@@ -32,3 +32,12 @@ void DriveTrain::start_right_motors(int speed) {
 	right_drive_speed = speed;
 
 }
+
+///gets a private variable and lets public people access it
+int DriveTrain::get_left_drive_speed() {
+	return left_drive_speed;
+}
+///gets a private variable and lets public people access it
+int DriveTrain::get_right_drive_speed() {
+	return right_drive_speed;
+}

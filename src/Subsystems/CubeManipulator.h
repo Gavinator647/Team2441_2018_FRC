@@ -30,6 +30,9 @@ public:
 	void start_right_fly_wheels(int speed);
 	bool is_cube_in ();
 
+	int get_left_fly_wheels_speed();
+	int get_right_fly_wheels_speed();
+
 
 	void InitDefaultCommand();
 };

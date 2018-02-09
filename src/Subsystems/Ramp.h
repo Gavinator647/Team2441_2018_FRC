@@ -48,6 +48,9 @@ public:
 	void stop_cam_motor();
 	bool is_ramp_up();
 
+	bool get_wax_on();
+	bool get_cam_on();
+
 	void InitDefaultCommand();
 };
 

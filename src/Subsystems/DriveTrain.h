@@ -26,10 +26,14 @@ private:
 	/// Current Drive Speed Value of Right Side of Drive Motors
 	int right_drive_speed =0;
 
+///I hope you dont notice this comment cause I dont wanna write it
 public:
 	DriveTrain();
 	void start_left_motors(int speed);
 	void start_right_motors(int speed);
+
+	int get_left_drive_speed();
+	int get_right_drive_speed();
 
 	void InitDefaultCommand();
 };

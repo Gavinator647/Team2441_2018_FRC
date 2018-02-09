@@ -36,3 +36,13 @@ void CubeManipulator::start_right_fly_wheels(int speed) {
 bool CubeManipulator::is_cube_in() {
 	return cube_sensor.Get();
 }
+
+///Lets a public function access a private variable
+int CubeManipulator::get_left_fly_wheels_speed() {
+	return left_fly_wheels_speed;
+}
+
+///exactly the same thing as the comment before
+int CubeManipulator::get_right_fly_wheels_speed() {
+	return right_fly_wheels_speed;
+}

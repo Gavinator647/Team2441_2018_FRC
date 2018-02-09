@@ -1,0 +1,17 @@
+CubeManipulator testplan:
+CubeIn: When we press Rt on the joystick, will the cubemanipulator move the correct direction and grab the cube
+CubeOut: When we press Lt will the cube mainpulator actually work and push the cube out
+KillCubeManipulator: When we release rt and lt will the cubemanipulator stop
+DriveJoystick: Push both joysticks forward.  Does it work? Push both joysticks back.  Does it work? Push one joystick forward and the other back.  Repeat for both sides.  Does it work?
+DrivePastAutoLine: Will the robot autonomously drive the distance it needs to drive(past auto line)
+Raiseramp: When we press x will the ramp rise
+LowerRamp: When we hold y and lb together will the ramp go down
+SmartDashboard:
+	CAM Shaft switch: Does the smart dashboard say so when the ramp is up
+	Intake Switch: Does the Smart dashboard know when the cube is in through the switch and does it stop then
+	Wax On: Does the Smart dashboard know when the winch is done
+	Cam on: Does the smart dashboard know when the cam is done
+	Right drive speed: Does the dashboard display the speed that the right wheel is moving at
+	Left drive speed: Does the dashboard display the speed that the left wheel is moving at
+	left flywheels speed: Does the dashboard display the speed that the left flywheel is moving at
+	right flywheels speed: Does the dashboard display the speed that the right flywheel is moving at
