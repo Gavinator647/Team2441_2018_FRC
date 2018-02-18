@@ -7,11 +7,8 @@
 class KillRampCAM : public frc::Command {
 public:
 	KillRampCAM();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
 };
 
 #endif  // KillRampCAM_H

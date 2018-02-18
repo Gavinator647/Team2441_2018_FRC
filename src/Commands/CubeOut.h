@@ -7,15 +7,13 @@
 class CubeOut: public frc::Command {
 
 private:
-	static constexpr int FLYWHEEL_SPEED = 1;
+	static constexpr float FLYWHEEL_SPEED = 75.0;
 
 public:
 	CubeOut();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
+	void Interrupted() override;
 };
 
 #endif  // CubeOut_H

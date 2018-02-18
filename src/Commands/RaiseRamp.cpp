@@ -13,11 +13,6 @@ void RaiseRamp::Initialize() {
 
 }
 
-///Not needed
-void RaiseRamp::Execute() {
-
-}
-
 ///No need to loop
 bool RaiseRamp::IsFinished() {
 	return Robot::ramp.is_ramp_up();
@@ -28,7 +23,7 @@ void RaiseRamp::End() {
 	Robot::ramp.stop_cam_motor();
 }
 
-///Not needed
+///comments are gay
 void RaiseRamp::Interrupted() {
 	Robot::ramp.stop_cam_motor();
 }

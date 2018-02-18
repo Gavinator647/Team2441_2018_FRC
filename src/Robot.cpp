@@ -18,6 +18,8 @@ void Robot::RobotInit() {
 	frc::SmartDashboard::PutData(&drivetrain);
 	frc::SmartDashboard::PutData(&intake);
 	frc::SmartDashboard::PutData(&ramp);
+
+	m_autonomousCommand = new DrivePastAutoLine();
 }
 
 
@@ -44,13 +46,15 @@ void Robot::DisabledPeriodic() {
  */
 ///initialization for the Autonomous control that repeats after a certain amount of tiem
 void Robot::AutonomousInit() {
-	m_autonomousCommand = new DrivePastAutoLine();
+
 	m_autonomousCommand->Start();
 }
+
 ///Autonomous control that repeats after a certain amount of tiem
 void Robot::AutonomousPeriodic() {
 	frc::Scheduler::GetInstance()->Run();
 }
+
 ///Initialization for user control that repeats after a certain amount of time
 void Robot::TeleopInit() {
 	// This makes sure that the autonomous stops running when

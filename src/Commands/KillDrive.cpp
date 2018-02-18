@@ -15,22 +15,8 @@ void KillDrive::Initialize() {
 
 }
 
-///Not needed.
-void KillDrive::Execute() {
-
-}
-
 ///Doesn't need to loop.
 bool KillDrive::IsFinished() {
 	return true;
 }
 
-///Not needed.
-void KillDrive::End() {
-
-}
-
-///Not needed.
-void KillDrive::Interrupted() {
-
-}

@@ -7,11 +7,10 @@
 class RaiseRamp: public frc::Command {
 public:
 	RaiseRamp();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
+	void End() override;
+	void Interrupted() override;
 };
 
 #endif  // RaiseRamp_H

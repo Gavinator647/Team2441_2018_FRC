@@ -7,11 +7,8 @@
 class KillRampWinch : public frc::Command {
 public:
 	KillRampWinch();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
 };
 
 #endif  // KillRampWinch_H

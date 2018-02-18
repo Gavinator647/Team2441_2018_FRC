@@ -49,3 +49,4 @@ bool Ramp::get_wax_on() {
 bool Ramp::get_cam_on() {
 	return cam_on;
 }
+

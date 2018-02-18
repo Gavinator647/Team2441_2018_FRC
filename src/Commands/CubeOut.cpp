@@ -12,21 +12,9 @@ void CubeOut::Initialize() {
 	Robot::intake.start_right_fly_wheels(FLYWHEEL_SPEED);
 
 }
-
-///Useless
-void CubeOut::Execute() {
-
-}
-
 ///No need to loop
 bool CubeOut::IsFinished() {
-	return false;
-}
-
-///Worthless
-void CubeOut::End() {
-
-
+	return true;
 }
 
 ///Not needed

@@ -11,12 +11,12 @@
 
 OI::OI() {
 	x.WhenPressed(new RaiseRamp());
-	lt.WhenPressed(new CubeOut());
-	lt.WhenReleased(new KillCubeManipulator());
-	rt.WhenPressed(new CubeIn());
-	rt.WhenReleased(new KillCubeManipulator());
-	y_lb.WhenActive(new LowerRamp);
-
+	lb.WhenPressed(new CubeOut());
+	lb.WhenReleased(new KillCubeManipulator());
+	rb.WhenPressed(new CubeIn());
+	rb.WhenReleased(new KillCubeManipulator());
+	y_b.WhenPressed(new LowerRamp);
+//	x.WhenPressed(new DrivePastAutoLine());
 
 }
 

@@ -16,7 +16,7 @@ void CubeManipulator::InitDefaultCommand() {
 /// [-100,100]. A positive spins the fly wheels clockwise ,a negative speed spins the
 ///fly wheels counterclockwise.A speed of zero will stop the fly wheels.
 void CubeManipulator::start_left_fly_wheels(int speed) {
-	double spark_input_value = speed/100;
+	double spark_input_value = speed/100.0;
 	left_m.Set(spark_input_value);
 	left_fly_wheels_speed = speed;
 }
@@ -25,7 +25,7 @@ void CubeManipulator::start_left_fly_wheels(int speed) {
 /// [-100,100]. A positive spins the fly wheels counterclockwise, a negative speed
 ///spins the fly wheels clockwise.A speed of zero will stop the fly wheels.
 void CubeManipulator::start_right_fly_wheels(int speed) {
-	double spark_input_value = -speed/100;
+	double spark_input_value = -speed/100.0;
 	right_m.Set(spark_input_value);
 	right_fly_wheels_speed = speed;
 }

@@ -9,13 +9,9 @@ CubeIn::CubeIn() :
 
 ///Starts motor
 void CubeIn::Initialize() {
+
 	Robot::intake.start_left_fly_wheels(FLYWHEEL_SPEED);
 	Robot::intake.start_right_fly_wheels(FLYWHEEL_SPEED);
-}
-
-///Not needed
-void CubeIn::Execute() {
-
 }
 
 ///Loop until sensor says otherwise

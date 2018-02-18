@@ -6,20 +6,19 @@
 
 class DrivePastAutoLine: public frc::Command {
 private:
-	static constexpr float DRIVE_SPEED = 1;
-	static constexpr float DRIVE_STOP = 0;
+	static constexpr int DRIVE_SPEED = -50;
+	static constexpr int DRIVE_STOP = 0;
 
 	///Time in seconds
-	static constexpr float DRIVE_TIME = 1;
+	static constexpr float DRIVE_TIME = 10;
 	frc::Timer auto_drive_time;
 
 public:
 	DrivePastAutoLine();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
+	void End() override;
+
 };
 
 #endif  // DrivePastAutoLine_H

@@ -7,17 +7,12 @@ LowerRamp::LowerRamp() :
 
 }
 
-///Starts moters
+///Starts motors
 void LowerRamp::Initialize() {
 	Robot::ramp.start_winch_motor();
 
 	lower_ramp_time.Reset();
 	lower_ramp_time.Start();
-
-}
-
-///Not needed
-void LowerRamp::Execute() {
 
 }
 
@@ -32,7 +27,7 @@ void LowerRamp::End() {
 
 }
 
-///Not needed
+///Im high guys
 void LowerRamp::Interrupted() {
 	Robot::ramp.stop_winch_motor();
 }

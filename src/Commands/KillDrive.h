@@ -8,11 +8,8 @@ class KillDrive: public frc::Command {
 
 public:
 	KillDrive();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
 };
 
 #endif  // KillDrive_H

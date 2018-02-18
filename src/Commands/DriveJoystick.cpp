@@ -5,16 +5,14 @@ DriveJoystick::DriveJoystick() :
 		frc::Command("DriveJoystick") {
 	Requires(&Robot::drivetrain);
 }
+///RIGHT JOYSTICK IS USING X AXIS NOT Y
+///BOTH ONLY ONE SPEED
 
-///Not needed
-void DriveJoystick::Initialize() {
-
-}
 
 ///Move the robot in response to the joystick
 void DriveJoystick::Execute() {
-	int left_speed = Robot::oi.GetJoystick().GetRawAxis(1) * 100;
-	int right_speed = Robot::oi.GetJoystick().GetRawAxis(4) * 100;
+	int left_speed = Robot::oi.GetJoystick().GetRawAxis(1) * 50.0;
+	int right_speed = Robot::oi.GetJoystick().GetRawAxis(5) * 50.0;
 	Robot::drivetrain.start_left_motors(left_speed);
 	Robot::drivetrain.start_right_motors(right_speed);
 

@@ -8,11 +8,10 @@
 class DriveJoystick : public frc::Command {
 public:
 	DriveJoystick();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Execute() override;
+	bool IsFinished() override;
+	void End() override;
+	void Interrupted() override;
 };
 
 #endif  // DriveJoystick_H

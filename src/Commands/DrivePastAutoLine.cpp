@@ -14,13 +14,9 @@ void DrivePastAutoLine::Initialize() {
 
 	auto_drive_time.Reset();
 	auto_drive_time.Start();
-
 }
 
-///Does not need
-void DrivePastAutoLine::Execute() {
 
-}
 
 ///checks if timer is past (), if it is past return true or else false
 bool DrivePastAutoLine::IsFinished() {
@@ -36,7 +32,3 @@ void DrivePastAutoLine::End() {
 
 }
 
-///does not need
-void DrivePastAutoLine::Interrupted() {
-
-}

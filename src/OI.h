@@ -17,6 +17,7 @@
 #include "Triggers/DoubleButton.h"
 
 
+
 class OI {
 public:
 	OI();
@@ -25,10 +26,10 @@ public:
 private:
 	frc:: Joystick m_joystick{0};
 
-	frc::JoystickButton x{&m_joystick, 0};
-	frc::JoystickButton lt{&m_joystick, 0};
-	frc::JoystickButton rt{&m_joystick, 0};
+	frc::JoystickButton x{&m_joystick, 3};
+	frc::JoystickButton lb{&m_joystick, 5};
+	frc::JoystickButton rb{&m_joystick, 6};
 
 
-	DoubleButton y_lb{&m_joystick, 0, 0};
+	frc::JoystickButton y_b{&m_joystick, 4};
 };

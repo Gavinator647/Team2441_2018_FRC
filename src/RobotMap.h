@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------*/
+ /*----------------------------------------------------------------------------*/
 /* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
 /* Open Source Software - may be modified and shared by FRC teams. The code   */
 /* must be accompanied by the FIRST BSD license file in the root directory of */
@@ -45,11 +45,11 @@ constexpr int CUBE_MANIPULATOR_SWITCH = 0;
 
 //TODO: figure this out
 /// Motor port connected to winch spark.
-constexpr int RAMP_WINCH_MOTOR = 4;
+constexpr int RAMP_WINCH_MOTOR = 5;
 
 //TODO: figure this out
 /// Motor port connected to the CAM shaft motor.
-constexpr int CAM_SHAFT_MOTOR = 5;
+constexpr int CAM_SHAFT_MOTOR = 4;
 
 //TODO: figure this out
 /// Limit switch port connected directly to the brain. Determines whether the CAM shaft

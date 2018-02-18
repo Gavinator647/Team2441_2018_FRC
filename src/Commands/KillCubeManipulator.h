@@ -8,11 +8,8 @@ class KillCubeManipulator : public frc::Command {
 
 public:
 	KillCubeManipulator();
-	void Initialize();
-	void Execute();
-	bool IsFinished();
-	void End();
-	void Interrupted();
+	void Initialize() override;
+	bool IsFinished() override;
 };
 
 #endif  // KillCubeManipulator_H

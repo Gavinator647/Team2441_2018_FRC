@@ -20,14 +20,14 @@ private:
 
 	//TODO: figure out speed.
 	/// Speed of winch to lower the ramp.
-	static constexpr float WINCH_SPEED = 1;
+	static constexpr float WINCH_SPEED = 10.0;
 
 	/// Stops winch motor.
 	static constexpr float WINCH_STOP = 0;
 
 	//TODO: figure out speed.
 	/// Speed of CAM shaft to raise the ramp.
-	static constexpr float CAM_SPEED = 1;
+	static constexpr float CAM_SPEED = 10.0;
 
 	/// Stops CAM shaft motor..
 	static constexpr float CAM_STOP = 0;
