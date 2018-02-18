@@ -16,19 +16,20 @@ void CubeIn::Initialize() {
 
 ///Loop until sensor says otherwise
 bool CubeIn::IsFinished() {
-	return Robot::intake.is_cube_in();
+	//return Robot::intake.is_cube_in();
+	return true;
 }
 
 ///Kill the cube manipulator
 void CubeIn::End() {
-	Robot::intake.start_left_fly_wheels(0);
-	Robot::intake.start_right_fly_wheels(0);
+	//Robot::intake.start_left_fly_wheels(0);
+	//Robot::intake.start_right_fly_wheels(0);
 
 }
 
 /// Kill the cube manipulator
 void CubeIn::Interrupted() {
-	Robot::intake.start_left_fly_wheels(0);
-	Robot::intake.start_right_fly_wheels(0);
+	//Robot::intake.start_left_fly_wheels(0);
+	//Robot::intake.start_right_fly_wheels(0);
 
 }

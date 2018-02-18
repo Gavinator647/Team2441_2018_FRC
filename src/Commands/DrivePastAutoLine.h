@@ -6,11 +6,11 @@
 
 class DrivePastAutoLine: public frc::Command {
 private:
-	static constexpr int DRIVE_SPEED = -50;
+	static constexpr int DRIVE_SPEED = 45;
 	static constexpr int DRIVE_STOP = 0;
 
 	///Time in seconds
-	static constexpr float DRIVE_TIME = 10;
+	static constexpr float DRIVE_TIME = 6.5;
 	frc::Timer auto_drive_time;
 
 public:
