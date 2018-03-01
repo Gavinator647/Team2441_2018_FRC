@@ -27,7 +27,7 @@ private:
 
 	//TODO: figure out speed.
 	/// Speed of CAM shaft to raise the ramp.
-	static constexpr float CAM_SPEED = 10.0;
+	static constexpr float CAM_SPEED = 1.0;
 
 	/// Stops CAM shaft motor..
 	static constexpr float CAM_STOP = 0;

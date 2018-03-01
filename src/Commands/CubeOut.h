@@ -7,7 +7,7 @@
 class CubeOut: public frc::Command {
 
 private:
-	static constexpr float FLYWHEEL_SPEED = 75.0;
+	static constexpr float FLYWHEEL_SPEED = 85.0;
 
 public:
 	CubeOut();

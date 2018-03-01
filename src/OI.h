@@ -25,11 +25,10 @@ public:
 
 private:
 	frc:: Joystick m_joystick{0};
-
-	frc::JoystickButton x{&m_joystick, 3};
 	frc::JoystickButton lb{&m_joystick, 5};
 	frc::JoystickButton rb{&m_joystick, 6};
 
 
-	frc::JoystickButton y_b{&m_joystick, 4};
+	DoubleButton y_b{&m_joystick, 2,4};
+	DoubleButton back_start{&m_joystick, 7,8};
 };

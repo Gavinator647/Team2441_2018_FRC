@@ -10,16 +10,15 @@
 #include <WPILib.h>
 
 OI::OI() {
-	x.WhenPressed(new RaiseRamp());
+	back_start.WhenActive(new RaiseRamp());
 	lb.WhenPressed(new CubeOut());
 	lb.WhenReleased(new KillCubeManipulator());
 	rb.WhenPressed(new CubeIn());
 	rb.WhenReleased(new KillCubeManipulator());
-	y_b.WhenPressed(new LowerRamp);
+	y_b.WhenActive(new LowerRamp);
 //	x.WhenPressed(new DrivePastAutoLine());
 
 }
-
 frc::Joystick& OI::GetJoystick() {
 	return m_joystick;
 }
