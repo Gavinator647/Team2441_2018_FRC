@@ -7,11 +7,8 @@
 
 #pragma once
 
-#include "Commands/CubeIn.h"
-#include "Commands/CubeOut.h"
-#include "Commands/LowerRamp.h"
-#include "Commands/KillCubeManipulator.h"
-#include "Commands/RaiseRamp.h"
+#include "Commands/MotorTest1.h"
+#include "Commands/KillMotor.h"
 #include <Joystick.h>
 #include <Buttons/JoystickButton.h>
 #include "Triggers/DoubleButton.h"
@@ -25,10 +22,5 @@ public:
 
 private:
 	frc:: Joystick m_joystick{0};
-	frc::JoystickButton lb{&m_joystick, 5};
-	frc::JoystickButton rb{&m_joystick, 6};
-
-
-	DoubleButton y_b{&m_joystick, 2,4};
-	DoubleButton back_start{&m_joystick, 7,8};
+	frc::JoystickButton a{&m_joystick, 3};
 };

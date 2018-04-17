@@ -10,13 +10,8 @@
 #include <WPILib.h>
 
 OI::OI() {
-	back_start.WhenActive(new RaiseRamp());
-	lb.WhenPressed(new CubeOut());
-	lb.WhenReleased(new KillCubeManipulator());
-	rb.WhenPressed(new CubeIn());
-	rb.WhenReleased(new KillCubeManipulator());
-	y_b.WhenActive(new LowerRamp);
-//	x.WhenPressed(new DrivePastAutoLine());
+	a.WhenPressed(new MotorTest1());
+	a.WhenReleased(new KillMotor());
 
 }
 frc::Joystick& OI::GetJoystick() {
