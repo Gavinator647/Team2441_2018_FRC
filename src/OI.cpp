@@ -10,10 +10,21 @@
 #include <WPILib.h>
 
 OI::OI() {
+<<<<<<< HEAD
 	a.WhenPressed(new MotorTest1());
 	a.WhenReleased(new KillMotor());
+=======
+	x.WhenPressed(new RaiseRamp());
+	lb.WhenPressed(new CubeOut());
+	lb.WhenReleased(new KillCubeManipulator());
+	rb.WhenPressed(new CubeIn());
+	rb.WhenReleased(new KillCubeManipulator());
+	y_b.WhenPressed(new LowerRamp);
+//	x.WhenPressed(new DrivePastAutoLine());
+>>>>>>> parent of 9d7a05a... Updated and tweaked code
 
 }
+
 frc::Joystick& OI::GetJoystick() {
 	return m_joystick;
 }

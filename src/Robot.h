@@ -7,6 +7,13 @@
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
 #include <IterativeRobot.h>
+<<<<<<< HEAD
+=======
+
+#include "Commands/AutonomousPhase.h"
+
+
+>>>>>>> parent of 9d7a05a... Updated and tweaked code
 #include "OI.h"
 #include "Subsystems/Motor.h"
 

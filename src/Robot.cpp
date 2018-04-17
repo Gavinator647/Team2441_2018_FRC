@@ -41,6 +41,11 @@ void Robot::DisabledPeriodic() {
 ///initialization for the Autonomous control that repeats after a certain amount of tiem
 void Robot::AutonomousInit() {
 
+<<<<<<< HEAD
+=======
+	m_autonomousCommand = new AutonomousPhase();
+	m_autonomousCommand->Start();
+>>>>>>> parent of 9d7a05a... Updated and tweaked code
 }
 
 ///Autonomous control that repeats after a certain amount of tiem

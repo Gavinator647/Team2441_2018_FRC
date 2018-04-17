@@ -22,5 +22,15 @@ public:
 
 private:
 	frc:: Joystick m_joystick{0};
+<<<<<<< HEAD
 	frc::JoystickButton a{&m_joystick, 3};
+=======
+
+	frc::JoystickButton x{&m_joystick, 3};
+	frc::JoystickButton lb{&m_joystick, 5};
+	frc::JoystickButton rb{&m_joystick, 6};
+
+
+	frc::JoystickButton y_b{&m_joystick, 4};
+>>>>>>> parent of 9d7a05a... Updated and tweaked code
 };
