@@ -77,7 +77,11 @@ void Robot::Log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	///frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
+=======
+	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
+>>>>>>> parent of 4c7b3bd... Competition Day Changes
 =======
 	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
 >>>>>>> parent of 4c7b3bd... Competition Day Changes
