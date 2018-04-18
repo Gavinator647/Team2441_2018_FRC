@@ -11,6 +11,7 @@
 
 OI::OI() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	///back_start.WhenActive(new RaiseRamp());
 =======
 <<<<<<< HEAD
@@ -19,10 +20,14 @@ OI::OI() {
 =======
 	x.WhenPressed(new RaiseRamp());
 >>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
+=======
+	back_start.WhenActive(new RaiseRamp());
+>>>>>>> parent of 4c7b3bd... Competition Day Changes
 	lb.WhenPressed(new CubeOut());
 	lb.WhenReleased(new KillCubeManipulator());
 	rb.WhenPressed(new CubeIn());
 	rb.WhenReleased(new KillCubeManipulator());
+<<<<<<< HEAD
 <<<<<<< HEAD
 	y.WhenPressed(new LowerRamp());
 	y.WhenReleased(new KillRampWinch());
@@ -35,6 +40,9 @@ OI::OI() {
 =======
 	y_b.WhenPressed(new LowerRamp);
 >>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
+=======
+	y_b.WhenActive(new LowerRamp);
+>>>>>>> parent of 4c7b3bd... Competition Day Changes
 //	x.WhenPressed(new DrivePastAutoLine());
 >>>>>>> parent of 9d7a05a... Updated and tweaked code
 

@@ -33,7 +33,6 @@ void DriveTrain::start_right_motors(int speed) {
 	back_right.Set(spark_input_value);
 	right_drive_speed = speed;
 
-
 }
 
 ///gets a private variable and lets public people access it
