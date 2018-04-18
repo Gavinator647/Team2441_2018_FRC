@@ -21,9 +21,9 @@ private:
 	frc::Spark front_right { RIGHT_FRONT_DRIVE_PORT };
 
 	/// Current Drive Speed Value of Left Side of Drive Motors
-	int left_drive_speed =0 ;
+	int left_drive_speed =0;
 
-	/// Current Drive Speed Value of Right Side of Drive Motors
+	/// Current Y Speed Value of Right Side of Drive Motors
 	int right_drive_speed =0;
 
 ///I hope you dont notice this comment cause I dont wanna write it

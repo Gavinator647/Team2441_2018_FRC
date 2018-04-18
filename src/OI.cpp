@@ -10,12 +10,19 @@
 #include <WPILib.h>
 
 OI::OI() {
-	back_start.WhenActive(new RaiseRamp());
+	///back_start.WhenActive(new RaiseRamp());
 	lb.WhenPressed(new CubeOut());
 	lb.WhenReleased(new KillCubeManipulator());
 	rb.WhenPressed(new CubeIn());
 	rb.WhenReleased(new KillCubeManipulator());
-	y_b.WhenActive(new LowerRamp);
+	y.WhenPressed(new LowerRamp());
+	y.WhenReleased(new KillRampWinch());
+	a.WhenPressed(new RaiseRamp());
+	a.WhenReleased(new KillRampCAM());
+	b.WhenPressed(new SlackRamp());
+	b.WhenReleased(new KillRampCAM());
+
+	///y_b.WhenActive(new LowerRamp);
 //	x.WhenPressed(new DrivePastAutoLine());
 
 }

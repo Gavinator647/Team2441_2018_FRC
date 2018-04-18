@@ -7,7 +7,7 @@
 
 class LowerRamp: public frc::Command {
 private:
-	static constexpr float DRIVE_TIME = 0.25;
+	static constexpr float DRIVE_TIME = 0.75;
 	frc::Timer lower_ramp_time;
 public:
 	LowerRamp();
