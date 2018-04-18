@@ -32,9 +32,3 @@ void DrivePastAutoLine::End() {
 
 }
 
-void DrivePastAutoLine::Interrupted() {
-	auto_drive_time.Stop();
-	Robot::drivetrain.start_left_motors(DRIVE_STOP);
-	Robot::drivetrain.start_right_motors(DRIVE_STOP);
-
-}

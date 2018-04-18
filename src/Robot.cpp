@@ -8,17 +8,12 @@
 #include <Commands/Scheduler.h>
 #include <SmartDashboard/SmartDashboard.h>
 
-DriveTrain Robot::drivetrain;
-CubeManipulator Robot::intake;
-Ramp Robot::ramp;
+Motor Robot::motor;
 OI Robot::oi;
 
 /// Creates SmartDashboard display windows for diagnostics
 void Robot::RobotInit() {
-	frc::SmartDashboard::PutData(&drivetrain);
-	frc::SmartDashboard::PutData(&intake);
-	frc::SmartDashboard::PutData(&ramp);
-
+	frc::SmartDashboard::PutData(&motor);
 }
 
 
@@ -46,8 +41,11 @@ void Robot::DisabledPeriodic() {
 ///initialization for the Autonomous control that repeats after a certain amount of tiem
 void Robot::AutonomousInit() {
 
-	m_autonomousCommand = new DrivePastAutoLine();
+<<<<<<< HEAD
+=======
+	m_autonomousCommand = new AutonomousPhase();
 	m_autonomousCommand->Start();
+>>>>>>> parent of 9d7a05a... Updated and tweaked code
 }
 
 ///Autonomous control that repeats after a certain amount of tiem
@@ -76,6 +74,7 @@ void Robot::TestPeriodic() {
 
 ///Gets and projects diagnostics on SmartDashboard display windows
 void Robot::Log() {
+<<<<<<< HEAD
 	///frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
 	frc::SmartDashboard::PutBoolean("Intake Switch", intake.is_cube_in());
 	frc::SmartDashboard::PutBoolean("Wax on", ramp.get_wax_on());
@@ -84,6 +83,8 @@ void Robot::Log() {
 	frc::SmartDashboard::PutNumber("Left drive speed", drivetrain.get_left_drive_speed());
 	frc::SmartDashboard::PutNumber("Get left flywheels speed", intake.get_left_fly_wheels_speed());
 	frc::SmartDashboard::PutNumber("Get right flywheels speed", intake.get_right_fly_wheels_speed());
+=======
+>>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
 
 }
 START_ROBOT_CLASS(Robot)

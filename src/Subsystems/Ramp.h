@@ -26,8 +26,13 @@ private:
 	static constexpr float WINCH_STOP = 0;
 
 	//TODO: figure out speed.
+<<<<<<< HEAD
 	/// Speed of CAM shaft to 1raise the ramp.
 	static constexpr float CAM_SPEED = 0.65;
+=======
+	/// Speed of CAM shaft to raise the ramp.
+	static constexpr float CAM_SPEED = 10.0;
+>>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
 
 	/// Stops CAM shaft motor..
 	static constexpr float CAM_STOP = 0;

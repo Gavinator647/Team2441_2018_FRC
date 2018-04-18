@@ -29,7 +29,7 @@ void CubeIn::End() {
 
 /// Kill the cube manipulator
 void CubeIn::Interrupted() {
-	Robot::intake.start_left_fly_wheels(0);
-	Robot::intake.start_right_fly_wheels(0);
+	//Robot::intake.start_left_fly_wheels(0);
+	//Robot::intake.start_right_fly_wheels(0);
 
 }
