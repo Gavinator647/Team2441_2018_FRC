@@ -28,12 +28,17 @@ private:
 	//TODO: figure out speed.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/// Speed of CAM shaft to 1raise the ramp.
 	static constexpr float CAM_SPEED = 0.65;
 =======
 	/// Speed of CAM shaft to raise the ramp.
 	static constexpr float CAM_SPEED = 10.0;
 >>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
+=======
+	/// Speed of CAM shaft to raise the ramp.
+	static constexpr float CAM_SPEED = 1.0;
+>>>>>>> parent of 4c7b3bd... Competition Day Changes
 =======
 	/// Speed of CAM shaft to raise the ramp.
 	static constexpr float CAM_SPEED = 1.0;

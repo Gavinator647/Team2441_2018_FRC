@@ -12,6 +12,7 @@
 OI::OI() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	///back_start.WhenActive(new RaiseRamp());
 =======
 <<<<<<< HEAD
@@ -23,10 +24,14 @@ OI::OI() {
 =======
 	back_start.WhenActive(new RaiseRamp());
 >>>>>>> parent of 4c7b3bd... Competition Day Changes
+=======
+	back_start.WhenActive(new RaiseRamp());
+>>>>>>> parent of 4c7b3bd... Competition Day Changes
 	lb.WhenPressed(new CubeOut());
 	lb.WhenReleased(new KillCubeManipulator());
 	rb.WhenPressed(new CubeIn());
 	rb.WhenReleased(new KillCubeManipulator());
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	y.WhenPressed(new LowerRamp());
@@ -40,6 +45,9 @@ OI::OI() {
 =======
 	y_b.WhenPressed(new LowerRamp);
 >>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
+=======
+	y_b.WhenActive(new LowerRamp);
+>>>>>>> parent of 4c7b3bd... Competition Day Changes
 =======
 	y_b.WhenActive(new LowerRamp);
 >>>>>>> parent of 4c7b3bd... Competition Day Changes
