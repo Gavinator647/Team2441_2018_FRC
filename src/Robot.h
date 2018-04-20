@@ -7,20 +7,23 @@
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
 #include <IterativeRobot.h>
-<<<<<<< HEAD
-=======
 
-#include "Commands/AutonomousPhase.h"
+#include "Commands/DrivePastAutoLine.h"
 
 
->>>>>>> parent of 9d7a05a... Updated and tweaked code
 #include "OI.h"
-#include "Subsystems/Motor.h"
+
+#include "Subsystems/CubeManipulator.h"
+#include "Subsystems/DriveTrain.h"
+#include "Subsystems/Ramp.h"
+
+
 
 class Robot: public frc::IterativeRobot {
 public:
-
-	static Motor motor;
+	static DriveTrain drivetrain;
+	static CubeManipulator intake;
+	static Ramp ramp;
 	static OI oi;
 
 private:
