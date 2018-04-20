@@ -7,23 +7,7 @@
 
 class LowerRamp: public frc::Command {
 private:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	static constexpr float DRIVE_TIME = 0.75;
-=======
-	static constexpr float DRIVE_TIME = 0.5;
->>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
-=======
-	static constexpr float DRIVE_TIME = 0.25;
->>>>>>> parent of 4c7b3bd... Competition Day Changes
-=======
-	static constexpr float DRIVE_TIME = 0.25;
->>>>>>> parent of 4c7b3bd... Competition Day Changes
-=======
-	static constexpr float DRIVE_TIME = 0.25;
->>>>>>> parent of 4c7b3bd... Competition Day Changes
 	frc::Timer lower_ramp_time;
 public:
 	LowerRamp();

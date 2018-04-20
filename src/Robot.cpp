@@ -8,12 +8,17 @@
 #include <Commands/Scheduler.h>
 #include <SmartDashboard/SmartDashboard.h>
 
-Motor Robot::motor;
+DriveTrain Robot::drivetrain;
+CubeManipulator Robot::intake;
+Ramp Robot::ramp;
 OI Robot::oi;
 
 /// Creates SmartDashboard display windows for diagnostics
 void Robot::RobotInit() {
-	frc::SmartDashboard::PutData(&motor);
+	frc::SmartDashboard::PutData(&drivetrain);
+	frc::SmartDashboard::PutData(&intake);
+	frc::SmartDashboard::PutData(&ramp);
+
 }
 
 
@@ -41,11 +46,8 @@ void Robot::DisabledPeriodic() {
 ///initialization for the Autonomous control that repeats after a certain amount of tiem
 void Robot::AutonomousInit() {
 
-<<<<<<< HEAD
-=======
-	m_autonomousCommand = new AutonomousPhase();
+	m_autonomousCommand = new DrivePastAutoLine();
 	m_autonomousCommand->Start();
->>>>>>> parent of 9d7a05a... Updated and tweaked code
 }
 
 ///Autonomous control that repeats after a certain amount of tiem
@@ -74,29 +76,14 @@ void Robot::TestPeriodic() {
 
 ///Gets and projects diagnostics on SmartDashboard display windows
 void Robot::Log() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	///frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
-=======
-	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
->>>>>>> parent of 4c7b3bd... Competition Day Changes
-=======
-	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
->>>>>>> parent of 4c7b3bd... Competition Day Changes
-=======
-	frc::SmartDashboard::PutBoolean("CAM Shaft Switch", ramp.is_ramp_up());
->>>>>>> parent of 4c7b3bd... Competition Day Changes
 	frc::SmartDashboard::PutBoolean("Intake Switch", intake.is_cube_in());
 	frc::SmartDashboard::PutBoolean("Wax on", ramp.get_wax_on());
-	frc::SmartDashboard::PutBoolean("Cam on", ramp.get_cam_on());
+	///frc::SmartDashboard::PutBoolean("Cam on", ramp.get_cam_on());
 	frc::SmartDashboard::PutNumber("Right drive speed", drivetrain.get_right_drive_speed());
 	frc::SmartDashboard::PutNumber("Left drive speed", drivetrain.get_left_drive_speed());
 	frc::SmartDashboard::PutNumber("Get left flywheels speed", intake.get_left_fly_wheels_speed());
 	frc::SmartDashboard::PutNumber("Get right flywheels speed", intake.get_right_fly_wheels_speed());
-=======
->>>>>>> a587c99ecd8c2afe6db061163d1007f81dfc3b49
 
 }
 START_ROBOT_CLASS(Robot)
