@@ -7,7 +7,7 @@
 class CubeIn: public frc::Command {
 
 private:
-	static constexpr float FLYWHEEL_SPEED = -75.0;
+	static constexpr float FLYWHEEL_SPEED = -50.0;
 
 public:
 	CubeIn();

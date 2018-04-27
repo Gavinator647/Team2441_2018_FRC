@@ -11,11 +11,13 @@ RaiseRamp::RaiseRamp() :
 void RaiseRamp::Initialize() {
 	Robot::ramp.start_cam_motor();
 
+	winch_time.Reset();
+	winch_time.Start();
 }
 
 ///No need to loop
 bool RaiseRamp::IsFinished() {
-	return Robot::ramp.is_ramp_up();
+	return winch_time.HasPeriodPassed(WINCH_TIME);
 }
 
 ///Kills CAM shaft
