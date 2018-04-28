@@ -38,17 +38,17 @@ private:
 	bool wax_on = true;
 
 	///declares variables that stores info on whether the cam are done
-	///bool cam_on = true;
+	bool cam_on = true;
 
 	///Tells all kinda stuff about whether the cam is up and stuff and the winch
-	///frc::DigitalInput cam_switch { CAM_SHAFT_SWITCH };
+	frc::DigitalInput cam_switch { CAM_SHAFT_SWITCH };
 public:
 	Ramp();
 	void start_winch_motor();
 	void stop_winch_motor();
 	void start_cam_motor();
 	void stop_cam_motor();
-	///bool is_ramp_up();
+	bool is_ramp_up();
 	void start_slack_ramp();
 
 	bool get_wax_on();
