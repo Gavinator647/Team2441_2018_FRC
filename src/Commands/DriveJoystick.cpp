@@ -11,7 +11,7 @@ DriveJoystick::DriveJoystick() :
 
 ///Move the robot in response to the joystick
 void DriveJoystick::Execute() {
-	int left_speed = Robot::oi.GetJoystick().GetRawAxis(1) * 80.0;
+	int left_speed = Robot::oi.GetJoystick().GetRawAxis(1) * 70.0;
 	int right_speed = Robot::oi.GetJoystick().GetRawAxis(5) * 70.0;
 	Robot::drivetrain.start_left_motors(left_speed);
 	Robot::drivetrain.start_right_motors(right_speed);

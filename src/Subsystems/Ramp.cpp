@@ -12,6 +12,10 @@ void Ramp::InitDefaultCommand() {
 
 }
 
+void Ramp::start_slack_ramp() {
+	raise_ramp.Set(SLACK_SPEED);
+}
+
 /// Activates the winch to lower the ramp.
 void Ramp::start_winch_motor() {
 	down_ramp.Set(WINCH_SPEED);
@@ -45,7 +49,7 @@ bool Ramp::get_wax_on() {
 	return wax_on;
 }
 
-///same f*cking thing as the previous
+///same thing as the previous
 bool Ramp::get_cam_on() {
 	return cam_on;
 }
